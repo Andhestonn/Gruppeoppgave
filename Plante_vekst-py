@@ -1,0 +1,20 @@
+"""Plantevekst. Del 1 (f) = MEDLEM D. Del 2 (i) = MEDLEM A."""
+from data import filtrer_aar
+
+
+def total_plantevekst(data, aar, min_temp=5):
+    """f) Summen av (temp - min_temp) for dager med temp > min_temp."""
+    pass
+
+
+def maks_vekst_fra_start(data, aar, start_dato):
+    """i) Vekst fra og med start_dato til årets slutt.
+    Minusgrader i middeltemperatur gir negativ vekst lik antall minusgrader.
+    Returnerer total vekst."""
+    pass
+
+
+def beste_startdato(data, aar):
+    """i) Finner startdatoen som gir høyest total vekst gjennom året.
+    Returnerer (startdato, vekst)."""
+    pass
