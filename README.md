@@ -27,30 +27,30 @@ gruppeprosjekt/
 ├── vekst.py        ← D: total_plantevekst (f), A: i)-funksjonene
 └── perioder.py     ← A: lengste_toerre_periode (g)
 
-Hvorfor det fungerer
+# Hvorfor det fungerer
 
-# Én fil per person (nesten): Ingen redigerer samme fil samtidig, så Git-merging går smertefritt. Unntaket er vekst.py, der D skriver én funksjon og A to. Dere kan la A lage en egen fil, vekst_avansert.py, hvis dere vil unngå konflikter helt.
+Én fil per person (nesten): Ingen redigerer samme fil samtidig, så Git-merging går smertefritt. Unntaket er vekst.py, der D skriver én funksjon og A to. Dere kan la A lage en egen fil, vekst_avansert.py, hvis dere vil unngå konflikter helt.
 
-# Felles «kontrakt»: Docstringen i data.py beskriver nøyaktig hvordan dataene ser ut. Alle funksjoner tar data (liste av dicts) og eventuelt aar som argumenter.
+Felles «kontrakt»: Docstringen i data.py beskriver nøyaktig hvordan dataene ser ut. Alle funksjoner tar data (liste av dicts) og eventuelt aar som argumenter.
 
-# Uavhengig testing: Alle trenger bare les_data for å teste sin egen del. Til å begynne med kan dere lage en liten testliste for hånd.
+Uavhengig testing: Alle trenger bare les_data for å teste sin egen del. Til å begynne med kan dere lage en liten testliste for hånd.
 
-Anbefalt rekkefølge
+# Anbefalt rekkefølge
 
-# A (eller den som kan mest) skriver les_data først og pusher til main. Det bør ta under en time. Alle andre venter ikke og kan sette opp Git og lese oppgaven mens de venter.
+A (eller den som kan mest) skriver les_data først og pusher til main. Det bør ta under en time. Alle andre venter ikke og kan sette opp Git og lese oppgaven mens de venter.
 
-# Alle lager hver sin gren, for eksempel ski, plotting og vekst, og kloner/pull'er data.py fra main.
+Alle lager hver sin gren, for eksempel ski, plotting og vekst, og kloner/pull'er data.py fra main.
 
-# Hver person skriver sine funksjoner og tester dem med en if __name__ == "__main__":-blokk nederst i egen fil.
+Hver person skriver sine funksjoner og tester dem med en if __name__ == "__main__":-blokk nederst i egen fil.
 
-# Når en funksjon er ferdig, lager dere en pull request, en annen i gruppa leser gjennom, og så merges den til main.
+Når en funksjon er ferdig, lager dere en pull request, en annen i gruppa leser gjennom, og så merges den til main.
 
-# B kobler til slutt alt sammen i main.py.
+B kobler til slutt alt sammen i main.py.
 
-Ting å være obs på i data.py
+# Ting å være obs på i data.py
 
-# Sjekk hvordan manglende verdier er skrevet i CSV-fila (ofte -), og om desimaltegnet er komma eller punktum.
+Sjekk hvordan manglende verdier er skrevet i CSV-fila (ofte -), og om desimaltegnet er komma eller punktum.
 
-# Konverter datoene til datetime med datetime.strptime, og sjekk datoformatet i fila først.
+Konverter datoene til datetime med datetime.strptime, og sjekk datoformatet i fila først.
 
-# Alle de andre funksjonene må tåle None-verdier, så avtal sammen hvordan de skal håndteres, for eksempel å hoppe over dagen.
+Alle de andre funksjonene må tåle None-verdier, så avtal sammen hvordan de skal håndteres, for eksempel å hoppe over dagen.
