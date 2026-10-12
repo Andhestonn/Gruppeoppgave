@@ -1,4 +1,4 @@
-# Sinnes: referanseprosjekt for to medlemmer -TEST
+# Sinnes: referanseprosjekt for to medlemmer -TEST - dobbeltest
 
 Dette er et ferdig eksempel dere kan kjøre og sammenlikne deres egen løsning med. Start med `SAMARBEID.md` for Git og oppgavefordeling. Begge CSV-filene følger med uendret. Det er ikke opprettet noe faktisk GitHub-repository eller sendt invitasjoner.
 
